@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Montserrat', sans-serif;
+            color: white;
+            background: linear-gradient(135deg, #007bff, #6f42c1, #000000);
+            background-size: 400% 400%;
+            animation: gradient 10s ease infinite;
+        }
+        @keyframes gradient {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        .content {
+            padding: 20px;
+            margin: 0 auto;
+            max-width: 800px;
+        }
+        h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+        .back-button {
+            display: inline-block;
+            padding: 15px 30px;
+            margin-top: 20px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-size: 18px;
+            transition: background 0.3s ease;
+        }
+        .back-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="content">
+        <h1>Inviter notre robot discord !</h1>
+        <p>Comment inviter notre bot ? </p>
+        <h2>Cliquez ci-dessous pour inviter le bot</h2>
+        <a class="back-button" href="https://discord.com/oauth2/authorize?client_id=1297594148278505472&permissions=8&integration_type=0&scope=bot" target="_blank">Inviter le Bot</a>
+        <a class="back-button" href="index.html">Retour à l'accueil</a> <!-- Lien pour revenir à la page principale -->
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inviter Mon Bot Discord</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Montserrat', sans-serif;
+            color: white;
+            background: linear-gradient(135deg, #007bff, #6f42c1, #000000);
+            background-size: 400% 400%;
+            animation: gradient 10s ease infinite;
+        }
+        @keyframes gradient {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        .sidebar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 250px;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+        }
+        .sidebar h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 24px;
+        }
+        .sidebar ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .sidebar ul li {
+            margin: 15px 0;
+        }
+        .sidebar ul li a {
+            text-decoration: none;
+            color: #ffffff;
+            font-size: 18px;
+            display: block;
+            padding: 10px;
+            border-radius: 8px;
+            transition: background 0.3s;
+        }
+        .sidebar ul li a:hover {
+            background-color: #007bff;
+        }
+        .content {
+            margin-left: 270px;
+            padding: 40px 20px; /* Ajout d'un padding supérieur pour espacer le contenu */
+            padding-left: 40px; /* Ajout d'un padding à gauche pour décaler le texte */
+        }
+        h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+        .button {
+            display: inline-block;
+            padding: 15px 30px;
+            margin: 10px 0;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-size: 18px;
+            font-weight: bold;
+            transition: background 0.3s ease;
+        }
+        .button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Barre de navigation latérale -->
+    <div class="sidebar">
+        <h2>Anx Bot</h2>
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="invite.html">Inviter le Bot</a></li>
+            <li><a href="about.html">À Propos du Bot</a></li>
+            <li><a href="support.html">Support</a></li> <!-- Lien vers la nouvelle page -->
+        </ul>
+    </div>
+
+    <!-- Contenu principal -->
+    <div class="content">
+        <section id="home">
+            <h1>Invitez Mon Bot Discord</h1>
+            <p>Bienvenue sur la page d'invitation du bot. Invitez le bot sur votre serveur et profitez de ses fonctionnalités !</p>
+        </section>
+
+        <section id="invite">
+            <h2>Cliquez ci-dessous pour inviter le bot</h2>
+            <a class="button" href="https://discord.com/oauth2/authorize?client_id=1297594148278505472&permissions=8&integration_type=0&scope=bot" target="_blank">Inviter le Bot</a>
+        </section>
+
+        <section id="about">
+            <h2>À Propos du Bot</h2>
+            <p>Pour en savoir plus , cliquez sur le bouton suivant :</p>
+            <a class="button" href="about.html" target="_blank">En Savoir Plus</a>
+        </section>
+
+        <section id="support">
+            <h2>Support</h2>
+            <p>Si vous avez besoin d'aide, veuillez consulter la page de support.</p>
+            <a class="button" href="support.html" target="_blank">Contacter le support</a>
+        </section>
+    </div>
+
+</body>
+</html>
