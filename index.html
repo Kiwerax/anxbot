@@ -83,6 +83,29 @@
         .button:hover {
             background-color: #0056b3;
         }
+
+        /* Nouvelle barre fixe en bas */
+        .bottom-bar {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: #003366; /* Même couleur que la barre latérale */
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.5);
+        }
+        .bottom-bar a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+            transition: color 0.3s;
+        }
+        .bottom-bar a:hover {
+            color: #007bff;
+        }
     </style>
 </head>
 <body>
@@ -120,6 +143,12 @@
             <p>Si vous avez besoin d'aide, veuillez consulter la page de support.</p>
             <a class="button" href="support.html" target="_blank">Contacter le support</a>
         </section>
+    </div>
+
+    <!-- Barre fixe en bas avec les liens -->
+    <div class="bottom-bar">
+        <a href="https://discord.gg/EYKnuV7pgA" target="_blank">Discord</a> | 
+        <a href="https://guns.lol/battlelookup" target="_blank">Guns</a>
     </div>
 
 </body>
