@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AnxBot Discord Bot</title>
-    <link rel="icon" href="logo.jpg" type="image/jpeg">
+    <title>AnxBot Support Page</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
     <style>
         body {
@@ -20,13 +19,15 @@
             50% { background-position: 100% 50%; }
             100% { background-position: 0% 50%; }
         }
+
+        /* Barre latérale */
         .sidebar {
             position: fixed;
             top: 0;
             left: 0;
             width: 250px;
             height: 100%;
-            background-color: #003366; /* Bleu marine fixe */
+            background-color: #003366;
             padding: 20px;
             box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
         }
@@ -55,10 +56,12 @@
         .sidebar ul li a:hover {
             background-color: #0056b3;
         }
+
+        /* Contenu principal décalé à droite */
         .content {
-            margin-left: 270px;
-            padding: 40px 20px; 
-            padding-left: 40px; 
+            margin-left: 300px; /* Décalage du contenu vers la droite */
+            padding: 40px 20px;
+            max-width: 800px;
         }
         h1 {
             font-size: 48px;
@@ -68,48 +71,57 @@
             font-size: 18px;
             margin-bottom: 20px;
         }
-        .button {
+        .back-button {
             display: inline-block;
             padding: 15px 30px;
-            margin: 10px 0;
+            margin-top: 20px;
             background-color: #007bff;
             color: white;
             text-decoration: none;
             border-radius: 8px;
             font-size: 18px;
-            font-weight: bold;
             transition: background 0.3s ease;
         }
-        .button:hover {
+        .back-button:hover {
             background-color: #0056b3;
         }
 
-        /* Nouvelle barre fixe en bas */
+        /* Barre fixe en bas */
         .bottom-bar {
             position: fixed;
             bottom: 0;
             left: 0;
             width: 100%;
-            background-color: #003366; /* Même couleur que la barre latérale */
+            background-color: #003366;
             color: white;
             padding: 10px 0;
-            text-align: center;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
             box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.5);
         }
-        .bottom-bar a {
+        .bottom-bar .left-links {
+            margin-left: 20px;
+        }
+        .bottom-bar .left-links a {
             color: #ffffff;
             text-decoration: none;
             margin: 0 15px;
             font-size: 18px;
             transition: color 0.3s;
         }
-        .bottom-bar a:hover {
+        .bottom-bar .left-links a:hover {
             color: #007bff;
+        }
+        .bottom-bar .right-text {
+            margin-right: 20px;
+            font-size: 18px;
         }
     </style>
 </head>
 <body>
 
+    <!-- Barre latérale -->
     <div class="sidebar">
         <h2>Anx Bot</h2>
         <ul>
@@ -126,29 +138,34 @@
             <p>Bienvenue sur le site officiel de AnxBot ! Ici vous trouverez toutes les informations que vous souhaitez en rapport avec le robot.</p>
             <p>Bonne lecture !</p>
         </section>
-
+    
         <section id="invite">
             <h2>Comment inviter notre robot ?</h2>
-            <a class="button" href="invite.html" target="_blank">Invite Page</a>
+            <a class="back-button" href="invite.html" target="_blank">Invite Page</a>
         </section>
-
+    
         <section id="about">
             <h2>À Propos du Bot</h2>
             <p>Pour en savoir plus , cliquez sur le bouton suivant :</p>
-            <a class="button" href="about.html" target="_blank">En Savoir Plus</a>
+            <a class="back-button" href="about.html" target="_blank">En Savoir Plus</a>
         </section>
-
+    
         <section id="support">
             <h2>Support</h2>
             <p>Si vous avez besoin d'aide, veuillez consulter la page de support.</p>
-            <a class="button" href="support.html" target="_blank">Contacter le support</a>
+            <a class="back-button" href="support.html" target="_blank">Contacter le support</a>
         </section>
     </div>
 
     <!-- Barre fixe en bas avec les liens -->
     <div class="bottom-bar">
-        <a href="https://discord.gg/EYKnuV7pgA" target="_blank">Discord</a> | 
-        <a href="https://guns.lol/battlelookup" target="_blank">Guns</a>
+        <div class="left-links">
+            <a href="https://discord.gg/EYKnuV7pgA" target="_blank">Discord</a> | 
+            <a href="https://guns.lol/battlelookup" target="_blank">Guns</a>
+        </div>
+        <div class="right-text">
+            Made By Kiwera
+        </div>
     </div>
 
 </body>
