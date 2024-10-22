@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AnxBot Support Page</title>
+    <title>AnxBot About</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
     <style>
         body {
@@ -19,11 +19,48 @@
             50% { background-position: 100% 50%; }
             100% { background-position: 0% 50%; }
         }
-        .content {
+        .sidebar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 250px;
+            height: 100%;
+            background-color: #003366; /* Bleu marine fixe */
             padding: 20px;
-            margin: 0 auto;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+        }
+        .sidebar h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 24px;
+            color: #ffffff;
+        }
+        .sidebar ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .sidebar ul li {
+            margin: 15px 0;
+        }
+        .sidebar ul li a {
+            text-decoration: none;
+            color: #ffffff;
+            font-size: 18px;
+            display: block;
+            padding: 10px;
+            border-radius: 8px;
+            transition: background 0.3s;
+        }
+        .sidebar ul li a:hover {
+            background-color: #0056b3;
+        }
+
+        .content {
+            margin-left: 300px; /* Décalage du contenu vers la droite */
+            padding: 40px 20px;
             max-width: 800px;
         }
+
         h1 {
             font-size: 48px;
             margin-bottom: 20px;
@@ -46,18 +83,72 @@
         .back-button:hover {
             background-color: #0056b3;
         }
+
+        /* Nouvelle barre fixe en bas */
+        .bottom-bar {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: #003366;
+            color: white;
+            padding: 10px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.5);
+        }
+        .bottom-bar .left-links {
+            margin-left: 20px;
+        }
+        .bottom-bar .left-links a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+            transition: color 0.3s;
+        }
+        .bottom-bar .left-links a:hover {
+            color: #007bff;
+        }
+        .bottom-bar .right-text {
+            margin-right: 20px;
+            font-size: 18px;
+        }
     </style>
 </head>
 <body>
 
-<div class="content">
-    <h1>Support</h1>
-    <p>Vous avez besoin d'aide par rapport à notre bot ? Ou bien vous souhaitez simplement poser des questions ? Félicitations, vous êtes au bon endroit !</p>
-    <p>Voilà pour vous nos différents réseaux sociaux :</p>
-    <a class="back-button" href="https://discord.gg/EYKnuV7pgA">Notre Discord</a>
-    <a class="button" href="index.html">Retour à l'accueil</a>
-</div>
+    <!-- Barre latérale -->
+    <div class="sidebar">
+        <h2>Anx Bot</h2>
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="invite.html">Inviter le Bot</a></li>
+            <li><a href="about.html">À Propos du Bot</a></li>
+            <li><a href="support.html">Support</a></li>
+        </ul>
+    </div>
 
+    <!-- Contenu principal -->
+    <div class="content">
+        <h1>Support</h1>
+        <p>Vous avez besoin d'aide par rapport à notre bot ? Ou bien vous souhaitez simplement poser des questions ? Félicitations, vous êtes au bon endroit !</p>
+        <p>Voilà pour vous nos différents réseaux sociaux :</p>
+        <a class="back-button" href="https://discord.gg/EYKnuV7pgA" target="_blank">Notre Discord</a>
+        <a class="back-button" href="index.html">Retour à l'accueil</a> <!-- Lien pour revenir à la page principale -->
+    </div>
+
+    <!-- Barre fixe en bas avec les liens -->
+    <div class="bottom-bar">
+        <div class="left-links">
+            <a href="https://discord.gg/EYKnuV7pgA" target="_blank">Discord</a> | 
+            <a href="https://guns.lol/battlelookup" target="_blank">Guns</a>
+        </div>
+        <div class="right-text">
+            Made By Kiwera
+        </div>
+    </div>
 
 </body>
 </html>
